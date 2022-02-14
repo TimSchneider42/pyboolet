@@ -203,7 +203,7 @@ class Multibody(SimulationComponent, ABC):
     @property
     def pose(self) -> Transformation:
         pos, quat = self.call(pybullet.getBasePositionAndOrientation)
-        return Transformation(pos, quat)
+        return Transformation.from_pos_quat(pos, quat)
 
     @property
     def velocity(self) -> Tuple[np.ndarray, np.ndarray]:
