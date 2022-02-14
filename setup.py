@@ -1,11 +1,11 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open("README.md", "r") as f:
     long_description = f.read()
 
 setup(
     name="pyboolet",
-    version="1.0.0",
+    version="1.0.1",
     description="Object-oriented wrapper for pybullet.",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -13,7 +13,7 @@ setup(
     author="Tim Schneider",
     author_email="schneider@ias.informatik.tu-darmstadt.de",
     license="MIT",
-    packages=["pyboolet"],
+    packages=find_packages(),
     install_requires=[
         "transformation3d==1.0.1",
         "pybullet"
