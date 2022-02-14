@@ -2,13 +2,14 @@ from typing import Sequence, Optional, TYPE_CHECKING
 
 import numpy as np
 import pybullet
+from transformation import Transformation
+
 from .simple_body import SimpleBody
 
-from assembly_gym.util import Transformation
-from ..shape import VisualShape, CollisionShape
+from pyboolet.shape import VisualShape, CollisionShape
 
 if TYPE_CHECKING:
-    from ..physics_client import PhysicsClient
+    from pyboolet import PhysicsClient
 
 
 class Box(SimpleBody):

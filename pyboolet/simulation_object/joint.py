@@ -3,11 +3,11 @@ from typing import List, TYPE_CHECKING, Callable, NamedTuple, Optional
 import pybullet
 
 import numpy as np
+from transformation import Transformation
 
-from assembly_gym.util import Transformation
 from .simulation_object import SimulationObject
-from ..util.common import decode_pybullet_tuple
-from ..constraint import Constraint, ConstraintJointType
+from pyboolet.util import decode_pybullet_tuple
+from pyboolet.constraint import Constraint, ConstraintJointType
 
 if TYPE_CHECKING:
     from .link import Link

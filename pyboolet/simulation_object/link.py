@@ -2,10 +2,10 @@ from typing import List, Optional, TYPE_CHECKING, Callable, Tuple, NamedTuple, U
 
 import numpy as np
 import pybullet
+from transformation import Transformation
 
-from ..util.common import decode_pybullet_tuple
+from pyboolet.util import decode_pybullet_tuple
 from .simulation_object import SimulationObject
-from assembly_gym.util import Transformation
 from .contact_point import ContactPoint
 
 if TYPE_CHECKING:

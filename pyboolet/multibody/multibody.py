@@ -5,16 +5,16 @@ from typing import Optional, TYPE_CHECKING
 
 import numpy as np
 import pybullet
-from ..simulation_component import SimulationComponent
-from ..simulation_object import ContactPoint, Joint, DynamicsInfo
+from transformation import Transformation
 
-from ..util import ReadOnlyDict
+from pyboolet.simulation_component import SimulationComponent
+from pyboolet.simulation_object import ContactPoint, Joint, DynamicsInfo, SimulationObject, Link, RevoluteJoint
 
-from ..simulation_object import SimulationObject, Link, RevoluteJoint
-from assembly_gym.util import Transformation
+from pyboolet.util import ReadOnlyDict
+
 
 if TYPE_CHECKING:
-    from ..physics_client import PhysicsClient
+    from pyboolet.physics_client import PhysicsClient
 
 
 class Multibody(SimulationComponent, ABC):

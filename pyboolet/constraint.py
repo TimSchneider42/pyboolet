@@ -4,7 +4,7 @@ from typing import Optional, TYPE_CHECKING
 import numpy as np
 
 import pybullet
-from assembly_gym.util import Transformation
+from transformation import Transformation
 
 from .simulation_component import SimulationComponent
 

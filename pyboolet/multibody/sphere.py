@@ -2,9 +2,9 @@ from typing import Sequence, Optional, TYPE_CHECKING
 
 import numpy as np
 import pybullet
+from transformation import Transformation
 
-from assembly_gym.util import Transformation
-from ..shape import VisualShape, CollisionShape
+from pyboolet.shape import VisualShape, CollisionShape
 from .simple_body import SimpleBody
 
 if TYPE_CHECKING:

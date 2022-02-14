@@ -2,13 +2,12 @@ from pathlib import Path
 from typing import Optional, TYPE_CHECKING, Union
 
 import pybullet
-import numpy as np
+from transformation import Transformation
 
-from assembly_gym.util import Transformation
 from .multibody import Multibody
 
 if TYPE_CHECKING:
-    from ..physics_client import PhysicsClient
+    from pyboolet import PhysicsClient
 
 
 class URDFBody(Multibody):

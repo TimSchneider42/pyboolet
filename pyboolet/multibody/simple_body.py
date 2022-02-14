@@ -1,12 +1,13 @@
 from typing import Optional, TYPE_CHECKING, Union
 
 import pybullet
-from assembly_gym.util import Transformation
+from transformation import Transformation
+
 from .multibody import Multibody
-from ..shape import CollisionShape, CollisionShapeArray, VisualShape, VisualShapeArray
+from pyboolet.shape import CollisionShape, CollisionShapeArray, VisualShape, VisualShapeArray
 
 if TYPE_CHECKING:
-    from ..physics_client import PhysicsClient
+    from pyboolet import PhysicsClient
 
 
 class SimpleBody(Multibody):

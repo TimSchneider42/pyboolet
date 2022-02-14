@@ -5,7 +5,7 @@ import itertools
 from typing import Type
 
 if TYPE_CHECKING:
-    from ..multibody import Multibody
+    from pyboolet.multibody import Multibody
 
 
 class SimulationObject(ABC):
